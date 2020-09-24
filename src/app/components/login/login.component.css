@@ -1,0 +1,45 @@
+.loginDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 18px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    border: 2px solid black;
+    width: 400px;
+    border-radius: 15px;
+    background-color: rgb(233, 241, 239);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 18px;
+    height: 40px;
+    width: 90px;
+    background-color: #20c93c;
+    border-radius: 10px;
+}
+
+
+.buttonDiv{
+    display: flex;
+    justify-content: space-around
+}

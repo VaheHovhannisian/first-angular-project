@@ -1,0 +1,29 @@
+<div class="registerDiv">
+    <div class="container" id="containerRegister">
+        <form id="registerForm" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label>Name Surname</label>
+            <label for="registerName">
+                <input id="registerName" type="text" formControlName="name">
+            </label>
+            <span *ngIf="!profileForm.controls.name.valid && profileForm.controls.name.touched" style="color: crimson;">Name required</span>
+            <label>Email</label>
+            <label for="registerEmail">
+                <input id="registerEmail" type="text" formControlName="email">
+            </label>
+            <span *ngIf="!profileForm.controls.email.valid && profileForm.controls.email.touched" style="color: crimson;">Email required</span>
+            <label>Password</label>
+            <label for="registerPassword">
+                <input id="registerPassword" type="text" formControlName="password">
+            </label>
+            <span *ngIf="!profileForm.controls.password.valid && profileForm.controls.password.touched" style="color: crimson;">Pass required</span>
+            <label>Confirm Password</label>
+            <label for="registerConfirmPassword">
+                <input id="registerConfirmPassword" type="text" formControlName="confirmPassword">
+            </label>
+            <span *ngIf="!profileForm.controls.confirmPassword.valid && profileForm.controls.confirmPassword.touched" style="color: crimson;">Pass required</span>
+            <label for="registerBtn">
+                <button id="registerBtn" type="submit" [disabled]="!profileForm.valid">Register</button>
+            </label>
+        </form>
+    </div>
+</div>

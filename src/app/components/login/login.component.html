@@ -1,0 +1,23 @@
+<Div class="loginDiv">
+    <div class="container">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label>User Name or Email</label>
+            <label for="loginName">
+                <input type="text" id="loginName" formControlName="name" required>
+            </label>
+            <label>Password</label>
+            <label for="loginPass">
+                <input type="password" id="loginPass" formControlName="password" required>
+            </label>
+            <div class="buttonDiv">
+                <label for="loginBtn">
+                    <button id="loginBtn" type="submit"  [disabled]="!profileForm.valid">Login</button>
+                </label>
+                <label for="registerBtn">
+                    <button id="registerBtn" type="button" routerLink="../register">Register</button>
+                </label>
+            </div>
+        </form>
+
+    </div>
+</Div>
